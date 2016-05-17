@@ -1,0 +1,153 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header{
+    color: white;
+    background-color: orange;
+}
+
+header h1{
+    margin: 0;
+    padding: 1rem;
+
+}
+
+aside{
+    padding: 1em;
+    background-color: lightgreen;
+    border: 1px solid black;
+}
+
+article{
+    padding: 1em;
+}
+
+.InputAddOn {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.InputAddOn-item {
+    background-color: orange;
+    color: black;
+    font: lighter;
+}
+
+.InputAddOn-item {
+    border: 1px solid rgba(147, 128, 108, 0.25);
+    padding: 0.5em 0.75em;
+}
+
+.InputAddOn-item:first-child {
+    border-radius: 2px 0 0 2px;
+}
+
+.InputAddOn-item:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+footer
+{
+    padding: 1em;
+    background-color: lightgrey;
+}
+
+/*lay-out met flexbox*/
+/*mobiel*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+aside{
+    order: 1;
+}
+
+footer:after{
+    content: "Dit is voor mobiel";
+}
+
+@media screen and (min-width: 26em) {
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    header img{
+        margin-left: 150px;
+    }
+    article{
+        width: 100%;
+    }
+    aside{
+        flex: 1;
+    }
+    .flex{
+        flex-direction: row;
+        flex: 1;
+        height: auto;
+    }
+    footer:after{
+        content: "Dit is voor schermen voor 26 em en 36 em";
+    }
+}
+
+
+
+@media screen and (min-width: 34em) {
+    main{
+        flex-wrap: nowrap;
+    }
+    article{
+        width: auto;
+        flex: 2;
+    }
+    header img{
+        margin-left: 200px;
+    }
+    aside{
+        order:0;
+    }
+    footer:after{
+        content: "Dit is voor schermen voor 34 em en 38 em";
+    }
+}
+
+@media screen and (min-width: 38em) {
+    main{
+        flex-wrap: nowrap;
+    }
+    article{
+        width: auto;
+        flex: 2;
+    }
+    header img{
+        margin-left: 280px;
+    }
+    aside{
+        order:0;
+    }
+    footer:after{
+        content: "Dit is voor schermen voor 38 em en 50 em";
+    }
+}
+
+@media screen and (min-width: 50em) {
+    main{
+        flex-wrap: nowrap;
+    }
+    article{
+        width: auto;
+        flex: 2;
+    }
+    header img{
+        margin-left: 480px;
+    }
+    aside{
+        order:0;
+    }
+    footer:after{
+        content: "Dit is voor schermen groter dan 44em";
+    }
+}
