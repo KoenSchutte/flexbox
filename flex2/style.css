@@ -11,7 +11,18 @@ header{
 header h1{
     margin: 0;
     padding: 1rem;
+}
 
+.naverino{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.naverino li{
+    padding: .4em .1em;
+    margin-right: 30px;
 }
 
 aside{
@@ -27,6 +38,9 @@ article{
 .InputAddOn {
     display: flex;
     margin-bottom: 10px;
+}
+#butterino{
+    list-style-type: none;
 }
 
 .InputAddOn-item {
@@ -68,6 +82,9 @@ aside{
 footer:after{
     content: "Dit is voor mobiel";
 }
+#logorino{
+     width: 250px;
+}   
 
 @media screen and (min-width: 26em) {
     main{

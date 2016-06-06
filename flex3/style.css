@@ -12,13 +12,6 @@ body{
     margin-left: -10px;
 }
 
-iframe{
-    width: 100%;
-    position: fixed;
-    height: 100%;
-    z-index: -1;
-    margin-top: -10px;
-}
 .wrapper{
     display: -webkit-box;
     display: -webkit-flex;
